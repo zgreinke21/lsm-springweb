@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 이 파일을 context.xml로 복사하고 프라퍼티를 적절하게 설정하세요.  -->
+<Context>
+	<Resource name="jdbc/cafe" auth="Container"
+		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+		type="javax.sql.DataSource" driverClassName="org.mariadb.jdbc.Driver"
+		username="cafe" password="zkvpqlalfqjsgh"
+		url="jdbc:mariadb://irafe.com:13306/cafe"
+		initialSize="1" maxActive="2" minIdle="1" maxIdle="2" testWhileIdle="true"
+		validationQuery="select 1" timeBetweenEvictionRunsMillis="60000" />
+</Context>
