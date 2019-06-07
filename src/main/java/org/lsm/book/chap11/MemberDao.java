@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository;
 /**
  * SpringJdbc를 사용해서 구현
  * 
- * @author Jacob
+ * @author lsm
  */
 @Repository
 public class MemberDao {

@@ -15,16 +15,16 @@
 		http://www.springframework.org/schema/jee/spring-jee.xsd">
 
 	<mvc:annotation-driven />
-	<context:component-scan base-package="org.jacob" />
+	<context:component-scan base-package="org.lsm" />
 
-	<!-- 
 	<mvc:interceptors>
 		<mvc:interceptor>
-			<mvc:mapping path="/member/**" />
-			<bean class="org.jacob.book.chap13.AuthCheckInterceptor" />
+			<mvc:mapping path="/member/*" />
+			<mvc:mapping path="/article/s/*" />
+			<mvc:mapping path="/letter/*" />
+			<bean class="org.lsm.book.chap13.AuthCheckInterceptor" />
 		</mvc:interceptor>
 	</mvc:interceptors>
-	 -->
 
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
